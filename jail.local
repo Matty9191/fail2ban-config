@@ -1,7 +1,7 @@
 [DEFAULT]
 # Ban hosts for one hour:
 bantime = 3600
-
+ 
 # Use the multiport iptables action
 banaction = iptables-multiport
 
