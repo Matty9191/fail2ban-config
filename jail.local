@@ -2,7 +2,7 @@
 # Ban hosts for one hour:
 bantime = 3600
 
-# Action to take when an IP is banned
+# Use the multiport iptables action
 banaction = iptables-multiport
 
 # Who to send e-mail to when an IP is banned
