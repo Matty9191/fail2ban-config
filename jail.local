@@ -2,13 +2,15 @@
 # Ban hosts for one hour:
 bantime = 3600
 
-# Override /etc/fail2ban/jail.d/00-firewalld.conf:
+# Action to take when an IP is banned
 banaction = iptables-multiport
 
+# Who to send e-mail to when an IP is banned
 destemail = EMAIL_ADDRESS_TO_SEND_TO
 sendername = fail2ban@oscar
 mta = sendmail
 
+# Where to send info if an IP is banned (e-mail, logs, etc.)
 action = %(action_mwl)s
 
 [sshd]
